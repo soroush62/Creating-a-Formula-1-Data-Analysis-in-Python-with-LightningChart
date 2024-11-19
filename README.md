@@ -123,7 +123,7 @@ LightningChart enables us to create a variety of visualizations to analyze telem
 
 # Creating the Charts
 
-## 1. RoadBrakePoint3D: 3D Track Visualization with Braking Areas
+## 1. 3D Track Visualization with Braking Areas
 - **Description**: This 3D visualization displays the Bahrain Grand Prix circuit using telemetry data, highlighting speed variations and braking zones. The track’s color gradient represents speed: blue for the lowest speeds and red for the highest. The blue points mark the braking areas where the driver slows down.
 - **Results**: The chart highlights the key braking zones, which align with the corners of the track. The red sections indicate where the car reaches its maximum speed, typically in straights.
 - **Use Case**: Teams can use this visualization to analyze braking patterns and optimize strategies for cornering and acceleration to improve lap times.
@@ -141,7 +141,7 @@ chart.open()
 
 ---
 
-## 2. Heatmap: Track Position vs. Speed and Gear Usage
+## 2. Track Position vs. Speed and Gear Usage
 - **Description**: These heatmaps illustrate the average speed and gear usage at various binned track positions (X and Y). The speed heatmap uses color to indicate areas of higher speed (red) versus lower speed (yellow/white), while the gear heatmap shows gear usage across the track, with red indicating higher gears.
 - **Results**: The speed heatmap reveals that straights are associated with higher speeds, while corners require lower speeds. The gear heatmap confirms the correlation between higher speeds and higher gears.
 - **Use Case**: These heatmaps assist in understanding the driver’s technique and identifying opportunities to optimize gear ratios or cornering strategies for improved lap performance.
@@ -159,7 +159,7 @@ dashboard.open()
 
 ---
 
-## 3. Top 5 Data Columns: Multi-Line Chart
+## 3. Multi-Line Chart
 - **Description**: This multi-line chart plots the top five telemetry parameters—acceleration, gear, brake intensity, engine RPM, and speed—over time for the first five laps. Each line corresponds to one lap, allowing for comparisons across laps.
 - **Results**: This chart helps to evaluate consistency across laps. Variations in parameters such as braking intensity or speed indicate how the driver adjusts their technique based on track conditions or strategy.
 - **Use Case**: Engineers and strategists can use this chart to identify patterns and improve driver performance or adjust car setup for better consistency.
@@ -176,7 +176,7 @@ chart.open()
 
 ---
 
-## 4. SpeedBrakeEngineRPM: Scatter Plot of Speed vs. Engine RPM
+## 4. Scatter Plot of Speed vs. Engine RPM
 - **Description**: This scatter plot visualizes the relationship between speed and engine RPM for each lap, with different colors representing individual laps.
 - **Results**: The chart demonstrates a direct relationship between speed and engine RPM, where higher speeds correspond to higher RPM. This provides insights into engine performance during acceleration and high-speed sections.
 - **Use Case**: Teams use this visualization to optimize engine power output and gear ratios for better acceleration and overall speed efficiency.
@@ -192,7 +192,7 @@ chart.open()
 
 ---
 
-## 5. TripleAxis: RPM, Speed, and Throttle Over Time
+## 5. RPM, Speed, and Throttle Over Time
 - **Description**: This multi-line chart overlays engine RPM, speed, and throttle data over time, using separate Y-axes for clarity. The chart enables analysis of how these parameters interact during a lap.
 - **Results**: The chart reveals a direct correlation between these three features. For instance, an increase in throttle input results in higher engine RPM and speed, highlighting the dynamic relationship between power delivery and acceleration.
 - **Use Case**: This chart is critical for optimizing throttle response and analyzing how engine performance impacts lap times.
