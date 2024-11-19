@@ -3,6 +3,8 @@ import lightningchart as lc
 import numpy as np
 from scipy.interpolate import interp1d
 
+lc.set_license('my-license-key')
+
 fastf1.Cache.enable_cache('Dataset/cache')
 
 session = fastf1.get_session(2023, 'Bahrain', 'R')
@@ -48,8 +50,6 @@ braking_areas = telemetry[telemetry['Brake'] > 0]
 braking_x = braking_areas['X'].astype(float).values
 braking_y = braking_areas['Y'].astype(float).values
 braking_z = braking_areas['Z'].astype(float).values
-
-lc.set_license(open('../license-key').read())
 
 chart = lc.Chart3D(theme=lc.Themes.Dark)
 

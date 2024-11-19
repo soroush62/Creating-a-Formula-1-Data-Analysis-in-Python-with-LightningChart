@@ -5,6 +5,8 @@ import numpy as np
 import math
 import asyncio
 
+lc.set_license('my-license-key')
+
 fastf1.Cache.enable_cache('Dataset/cache')
 
 # Load Bahrain Grand Prix race session
@@ -44,7 +46,7 @@ for driver in session.laps['DriverNumber'].unique():
             'Time': telemetry['Time'].dt.total_seconds().tolist(),
         }
 
-lc.set_license(open('../license-key').read())
+
 
 dashboard = lc.Dashboard(rows=2, columns=3, theme=lc.Themes.Dark)
 

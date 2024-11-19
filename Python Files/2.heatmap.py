@@ -3,6 +3,8 @@ import numpy as np
 import lightningchart as lc
 import fastf1
 
+lc.set_license('my-license-key')
+
 fastf1.Cache.enable_cache('Dataset/cache')
 
 session = fastf1.get_session(2023, 'Bahrain', 'R')
@@ -40,7 +42,6 @@ heatmap_data_gear = df.pivot_table(
 
 with open('D:/Computer Aplication/WorkPlacement/Projects/shared_variable.txt', 'r') as f:
     mylicensekey = f.read().strip()
-lc.set_license(mylicensekey)
 
 dashboard = lc.Dashboard(
     columns=1,

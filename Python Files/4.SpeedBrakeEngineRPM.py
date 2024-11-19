@@ -2,6 +2,8 @@ import lightningchart as lc
 import fastf1
 import pandas as pd
 
+lc.set_license('my-license-key')
+
 fastf1.Cache.enable_cache('Dataset/cache')
 
 # Load Bahrain Grand Prix race session
@@ -24,7 +26,6 @@ df.rename(columns={'Speed': 'speed', 'RPM': 'current_engine_rpm', 'Brake': 'brak
 
 with open('D:/Computer Aplication/WorkPlacement/Projects/shared_variable.txt', 'r') as f:
     mylicensekey = f.read().strip()
-lc.set_license(mylicensekey)
 
 lap_colors = {
     1: lc.Color('red'),

@@ -2,9 +2,7 @@ import lightningchart as lc
 import fastf1
 import pandas as pd
 
-with open('D:/Computer Aplication/WorkPlacement/Projects/shared_variable.txt', 'r') as f:
-    mylicensekey = f.read().strip()
-lc.set_license(mylicensekey)
+lc.set_license('my-license-key')
 
 fastf1.Cache.enable_cache('Dataset/cache')
 
